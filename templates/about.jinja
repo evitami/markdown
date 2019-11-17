@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Growth mindset</title>
-    <link rel="stylesheet" type="text/css" href={{url_for("static", filename="css/main.css")}}>
-</head>
-<body>
-<header>
-    <h1> GROWIE </h1>
-</header>
+{% extend "about.jinja" %}
 
-<nav>
-    <ul class=nav>
-        <li> <a href="#">About</a> </li>
-        <li> <a href="#">Lean Canvas levels</a> </li>
-        <li> <a href="#">Profil</a> </li>
-    </ul>
-</nav>
+{% block title %} Growie {% endblock %}
 
-<main>
+{% block main %}
     Growie will guide you through the process of creating a business plan and will help you to find valuable
     contacts.
-</main>
-
-<footer>
-    <p>
-        (c) 2019 Evka Milovska
-    </p>
-</footer>
-</body>
-</html>
+{% endblock %}
